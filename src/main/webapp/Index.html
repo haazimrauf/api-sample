@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function httpGet(theurl){
+	var xmlHttp = new XMLHttpRequest();
+	xmlHttp.open('GET', theurl , false);
+	xmlHttp.send(null);
+	  document.getElementById("output").innerHTML = xmlHttp.response;
+}
+}
+</script>
+<body>
+<p id="output"></p>
+<input type="button" onclick="httpGet('http://localhost:8080/accountapp/api/account/getAllAccounts')" value="Get All"/>
+
+</body>
+</head>
+</html>

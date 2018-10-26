@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
-@Entity
+@Entity // Not just a POJO (plain old java object)
 public class Account {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
