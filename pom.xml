@@ -14,6 +14,19 @@
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
 
+
+      <profiles>
+      <profile>
+        <id>deploy</id>
+          <build>
+            <directory>C:\Users\Admin\External Programs\wildfly-10.1.0.Final\standalone\deployments</directory>
+          </build>
+      </profile>
+
+    </profiles>
+    
+
+
     <dependencyManagement>
       <dependencies>
           <dependency>
